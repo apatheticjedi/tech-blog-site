@@ -14,7 +14,10 @@ router.get('/', (req, res) => {
         include: [
             {
                 model: Comment, 
-                include: [User]
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
             },
             {
                 model: User,
@@ -43,7 +46,10 @@ router.get('/:id', (req, res) => {
         include: [
             {
                 model: Comment, 
-                include: [User]
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
             },
             {
                 model: User,
@@ -68,7 +74,7 @@ router.post('/', (req, res) => {
     Post.create({
         title: req.body.title,
         post_content: req.body.post_content,
-        user_id: req.body.user_id
+        user_id: req.session.user_id
     })
     .then(dbPostData => res.json(dbPostData))
     .catch(err => {
