@@ -10,7 +10,7 @@
     color: #1f9c13;
     background-color: #333;
   }
-  
+
   a {
     text-decoration: none;
     color: #1f9c13;
@@ -94,18 +94,24 @@
     background-color: #1f9c13;
   }
   
-  header h1 {
-    font-size: 1.5em;
+  header h1 a {
+    font-size: 1em;
     color: #333;
+    font-weight: bolder;
   }
 
   header a {
     color: #333;
   }
+
+  ::placeholder {
+    color: #000
+  }
   
   main {
     flex: 1;
     padding: 2% 4%;
+    height: 86%;
   }
   
   .btn-no-style {
@@ -167,10 +173,12 @@
   .comment {
     padding: 1%;
     margin-bottom: 1%;
+    color: #000;
+    background-color: #ccc;
   }
   
   .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: #7d7d7d;
   }
   
   .comment .meta {
@@ -195,7 +203,7 @@
     font-size: 110%;
     background-color: #1f9c13;
     color: #333;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
   }

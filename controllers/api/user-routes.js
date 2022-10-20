@@ -45,7 +45,7 @@ router.get('/:id', (req, res) => {
     })
     .catch(err => {
         console.log(err);
-        res.st;atus(500).json(err);
+        res.status(500).json(err);
     })
 });
 

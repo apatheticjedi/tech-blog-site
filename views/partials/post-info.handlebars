@@ -4,6 +4,9 @@
         <p>{{post_content}}</p>
     </div>
     <div class="meta">
-        Posted by {{user.username}} on {{format_date created_at}}
+        <p>Posted by {{user.username}} on {{format_date created_at}}
+        {{#if comments.length}}
+        | {{comments.length}} comment(s)</p>
+        {{/if}}
     </div>
 </article>
