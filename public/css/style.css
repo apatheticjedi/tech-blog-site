@@ -7,22 +7,27 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: #333;
+    color: #1f9c13;
+    background-color: #333;
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #1f9c13;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: #095f01;
+  }
+
+  .post-list ::marker {
+    display: none;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #1f9c13;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,23 +38,29 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #197d0f;
   }
   
   .post-list {
     margin: 0;
     padding: 0;
   }
+
+  article {
+    border: 1px solid #1f9c13;
+  }
   
   textarea, input {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #7d7d7d;
+    background-color: #7d7d7d;
+    cursor: pointer;
   }
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #197d0f;
   }
   
   textarea {
@@ -80,10 +91,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
+    background-color: #1f9c13;
   }
   
   header h1 {
-    font-size: 1em;
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  header a {
+    color: #333;
   }
   
   main {
@@ -97,7 +114,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #333;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -106,7 +123,7 @@
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: #095f01;
   }
   
   .delete-post-btn {
@@ -124,8 +141,9 @@
   
   .post .title span {
     font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
+    font-weight: bold;
+    font-size: 150%;
+    color: #1f9c13;
   }
   
   .edit-link {
@@ -175,4 +193,9 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+    background-color: #1f9c13;
+    color: #333;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }

@@ -15,6 +15,12 @@ router.get('/', (req, res) => {
         ],
         include: [
             {
+                model: User,
+                include: ['username']
+            }
+        ],
+        include: [
+            {
                 model: Comment,
                 include: [User]
             }

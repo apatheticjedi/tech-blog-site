@@ -50,7 +50,7 @@ router.get('/:id', (req, res) => {
 });
 
 // create new user
-router.post('/', async (req, res) => {
+router.post('/', (req, res) => {
     User.create({
         username: req.body.username,
         email: req.body.email,
@@ -96,6 +96,10 @@ router.post('/login', (req, res) => {
 
             res.status(200).json({ user: dbUserData, message: 'You are now logged in!' });
         });
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
     });
 });
 
