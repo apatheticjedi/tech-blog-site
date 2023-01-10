@@ -109,9 +109,7 @@
   }
   
   main {
-    flex: 1;
     padding: 2% 4%;
-    height: 86%;
   }
   
   .btn-no-style {
@@ -199,11 +197,10 @@
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: center;
-    padding: 1%;
+    align-items: center;
     font-size: 110%;
     background-color: #1f9c13;
     color: #333;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    height: 3rem;
   }
