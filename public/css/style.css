@@ -92,6 +92,9 @@
     align-items: center;
     padding: 0 1%;
     background-color: #1f9c13;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
   }
   
   header h1 a {
@@ -110,6 +113,8 @@
   
   main {
     padding: 2% 4%;
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
   }
   
   .btn-no-style {
@@ -194,6 +199,8 @@
   }
   
   footer {
+    position: fixed;
+    bottom: 0;
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: center;
